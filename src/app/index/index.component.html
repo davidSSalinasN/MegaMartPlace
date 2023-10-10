@@ -1,0 +1,59 @@
+<div class="container-home">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active card" data-bs-interval="10000">
+        <img src="../assets/slider/blender promoti 1.png"
+          class="d-block w-100 img-calculate" alt="licuadora">
+        <div class="carousel-caption d-none d-md-block card-img-overlay card-carousel">
+          <h5 class="card-title tittle">Licuadoras m34313</h5>
+          <p class="card-text description">Lleva ya tu nueva licuadora en un precio especial</p>
+
+        </div>
+      </div>
+      <div class="carousel-item card" data-bs-interval="2000">
+        <img src="../assets/slider/lavadora.png"
+          class="d-block w-100 img-calculate" alt="microondas">
+        <div class="carousel-caption d-none d-md-block card-img-overlay card-carousel">
+          <h5 class="card-title tittle">lavadora sony</h5>
+          <p class="card-text description">Nueva lavadora secadora Sony ultimo modelo</p>
+        </div>
+      </div>
+      <div class="carousel-item card">
+        <img src="../assets/slider/airfryer.png"
+          class="d-block w-100 img-calculate" alt="tostadora">
+        <div class="carousel-caption d-none d-md-block card-img-overlay card-carousel">
+          <h5 class="card-title tittle">La Airfryer mas potente</h5>
+          <p class="card-text description">Esta airfryer es mas potente y con mas espacio</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="card mb-3 cardcito" *ngFor="let elemento of listaProductos" style="max-width: 540px;">
+    <div class="row g-0" [routerLink]="['/product-detail',elemento.id]">
+      <div class="col-md-4">
+        <img src="../assets/products/{{elemento.rootImg}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{elemento.title}}</h5>
+          <p class="card-text">{{elemento.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+

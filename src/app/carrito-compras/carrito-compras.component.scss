@@ -1,0 +1,91 @@
+$color-purple: purple;
+$color-white:#ffff;
+$color-dark-purple: #9A0FAB;
+
+.container-product{
+  margin-top: 0%;
+  padding-top: 0;
+  padding: 5%;
+  .list-group{
+      list-style: none!important;
+  }
+  .list-group-item{
+      font-size: 25px;
+      border-bottom: 1px solid $color-dark-purple !important;
+      display: flex;
+      justify-content: space-between;
+
+      h4{
+        margin-top: 0.5%;
+        color:$color-purple;
+
+      }
+
+      .clean-product{
+
+          text-decoration: none;
+          color: $color-white;
+          border: 1px solid $color-dark-purple;
+          background-color: $color-purple;
+          margin-right: 1%;
+
+
+      }
+
+
+      .img-product{
+          padding: 0;
+          margin: 0;
+          width: 8%;
+          height: 120px;
+          background-size: cover;
+          margin-right: 2%;
+          &__img{
+            width: 100%;
+          }
+      }
+      .title-product{
+              display: absolute;
+              width: 46%;
+              h4{
+              padding-top: 5%;
+              margin-left: 1%;
+              width: 10%;
+              margin-right: 0;
+              text-align: left;
+              color: $color-purple;
+
+              }
+
+      }
+      .text-container{
+
+          width: 30%;
+          color: $color-purple;
+
+  }
+  .icons-container{
+
+      width: 46%;
+      text-align: right;
+      display: flex;
+      justify-content: right;
+      .icons-container__precio{
+        color: $color-dark-purple;
+        margin-right: 5%;
+      }
+      i{
+          margin-right: 1%;
+          margin-top: 1%;
+          color: $color-purple;
+      }
+  }
+
+
+  }
+  .down-section{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

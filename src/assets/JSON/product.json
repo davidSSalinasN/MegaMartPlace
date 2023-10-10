@@ -1,0 +1,81 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "licuadora",
+      "description": "¡Prepárate para vivir la revolución culinaria con nuestra licuadora de última generación!",
+      "precio": 123,
+      "promotion": true,
+      "pricePromotion": 123,
+      "rootImg":"blender promoti 1.png",
+      "quantity":8,
+      "modificado":"09/10/2023"
+    },
+    {
+      "id": 2,
+      "title": "lavadora",
+      "description": "test",
+      "precio": 123,
+      "promotion": true,
+      "pricePromotion": 123,
+      "rootImg":"lavadora.png",
+      "quantity":8,
+      "modificado":"09/10/2023"
+    },
+    {
+      "id": 3,
+      "title": "nevera",
+      "description": "test",
+      "precio": 123,
+      "promotion": true,
+      "pricePromotion": 123,
+      "rootImg":"blender promoti 1.png",
+      "quantity":8,
+      "modificado":"09/10/2023"
+    },
+    {
+      "id": 4,
+      "title": "estufa",
+      "description": "test",
+      "precio": 123,
+      "promotion": true,
+      "pricePromotion": 123,
+      "rootImg":"blender promoti 1.png",
+      "quantity":8,
+      "modificado":"09/10/2023"
+    },
+    {
+      "id": 5,
+      "title": "microondas",
+      "description": "test",
+      "precio": 123,
+      "promotion": true,
+      "pricePromotion": 123,
+      "rootImg":"blender promoti 1.png",
+      "quantity":8,
+      "modificado":"09/10/2023"
+    },
+    {
+      "id": 6,
+      "title": "celular",
+      "description": "este nuevo celular supera el iphone",
+      "precio": 123,
+      "promotion": true,
+      "pricePromotion": 123,
+      "rootImg":"blender promoti 1.png",
+      "quantity":8,
+      "modificado":"09/10/2023"
+    },
+    {
+      "id": 7,
+      "title": "Televisor",
+      "description": "este televisor es a 4k",
+      "precio": 123,
+      "promotion": false,
+      "pricePromotion": 123,
+      "rootImg":"lavadora.png",
+      "quantity":8,
+      "modificado":"09/10/2023"
+    }
+  ]
+}

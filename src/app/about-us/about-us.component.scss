@@ -1,0 +1,39 @@
+$color-purple: purple;
+$color-white:#ffff;
+$color-dark-purple: #9A0FAB;
+.container-entity{
+  &__description{
+      margin-top: 3%;
+      h3{
+
+          margin: 10%;
+          margin-top: 0;
+          margin-bottom: 5%;
+          color: $color-dark-purple;
+      }
+      p{
+          margin: 10%;
+          margin-top: 0;
+          color: $color-purple;
+          margin-bottom: 0%;
+          font-size: 20px;
+      }
+  }
+  &__vision{
+      margin-top: 0%;
+      h3{
+
+          margin: 10%;
+          margin-bottom: 4%;
+          margin-top: 3%;
+          color: $color-dark-purple;
+      }
+      p{
+          margin: 10%;
+          margin-top: 0;
+          color: $color-purple;
+          margin-bottom: 5%;
+          font-size: 20px;
+      }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="listproduct">
+  <ul class="list-group list-group-light"  >
+    <li class="list-group-item d-flex justify-content-between align-items-center listproduct-product"  *ngFor="let elemento of lista.product" [routerLink]="['/product-detail',elemento.id]">
+      <div class="d-flex align-items-center">
+        <img src="../assets/products/{{elemento.rootImg}}" alt="product"
+          class="listproduct-product--img" />
+        <div class="ms-3">
+          <p class="fw-bold mb-1">{{elemento.title}}</p>
+          <p class="text-muted mb-0">{{elemento.description}}</p>
+          <p class="text-muted mb-0">${{elemento.pricePromotion}}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div>

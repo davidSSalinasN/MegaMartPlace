@@ -1,0 +1,70 @@
+<div class="productdetail">
+  <div class="productdetail-view">
+    <img class="productdetail-view_img" src="../../assets/products/{{elemento.rootImg}}" alt="">
+  </div>
+  <div class="productdetail-content">
+    <div class="productdetail-content-header">
+      <h2 class="productdetail-content-header_title text-purple">{{elemento.title}}</h2>
+      <p class="productdetail-content-header_quantity text-purple">Cantidad:{{elemento.quantity}}</p>
+    </div>
+    <br>
+    <div class="productdetail-content-body">
+      <p class="productdetail-content-body_description text-purple">
+        {{elemento.description}}
+      </p>
+      <div [className]="styleClass">
+        <p class="productdetail-content-body_Promotion text-purple">promocion</p>
+        <p class="promocion">${{elemento.precio}}</p>
+      </div>
+      <p class="productdetail-content-body_price text-purple">${{obtenerValor()}}</p>
+    </div>
+    <div class="productdetail-content-button" >
+      <button class="productdetail-content-button_shopnow text-white" (click)="abrirModal()" [disabled]="elemento.quantity>0?false:true" > ¡Compra ya!</button>
+      <div class="content-button">
+        <button class="productdetail-content-button_adding text-white" (click)="carritoCompras()" [disabled]="elemento.quantity>0?false:true">+</button><small
+          class="productdetail-content-button_small text-purple">Agregar a la lista</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="modalCompra" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{elemento.title}}</h5>
+        <button type="button" class="close" data-dismiss="modal" (click)="cerrarModal()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>cuantos productos desea comprar</p>
+        <input type="number" [max]="elemento.quantity" [placeholder]="'cantidad maxima '+elemento.quantity" [(ngModel)]="cantidad">
+        <p>¿Confirmar compra?</p>
+        <p> El valor de la compra sera de: ${{cantidadTotal()}}</p>
+        <p>{{errorCantidad}}</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="cerrarModal()">Close</button>
+        <button type="button" class="btn btn-primary background-color" (click)="comprar()" [disabled]="comprarBoton">¡Comprar!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modalConfirmar" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{elemento.title}}</h5>
+        <button type="button" class="close" data-dismiss="modal" (click)="cerrarCarrito()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> Agregado exitosamente</p>
+      </div>
+    </div>
+  </div>
+</div>

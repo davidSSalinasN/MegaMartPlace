@@ -1,0 +1,128 @@
+$color-purple: purple;
+$color-white: #ffff;
+$color-dark-purple: #9A0FAB;
+
+.center{
+  top: 50%;
+  left: 50%;
+  width: 29vw;
+  background: white;
+  border-radius: 10px;
+  margin: 10%;
+  margin-left: 30%;
+  margin-bottom: 10%;
+  border: 1px solid $color-dark-purple;
+  padding: 5%;
+  color: $color-dark-purple;
+}
+
+.center h1{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid $color-purple;
+}
+
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid white;
+  margin: 30px 0;
+}
+
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: black;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background: $color-dark-purple;
+  transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: $color-dark-purple;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:Valid ~ span::before{
+  width: 100%;
+}
+
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+
+.pass:hover{
+  text-decoration: underline;
+}
+
+button[type="Submit"]{
+  width: 50%;
+  height: 50px;
+  color: $color-dark-purple;
+  border: 1px solid;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+button[type="Submit"]:hover{
+  background: $color-purple;
+  color: #e9f4fb;
+  transition: .5s;
+}
+
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+
+.signup_link a{
+  color: $color-purple;
+  text-decoration: none;
+}
+
+.signup_link a:hover{
+  text-decoration: underline;
+}
+
+.HomeAbout{
+  width: 100vw;
+  height: 25vh;
+}
+
+
+
+

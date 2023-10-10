@@ -1,0 +1,6 @@
+<div class="container-product">
+  <ul class="list-group list-group-flush" >
+      <li class="list-group-item"><a [routerLink]="['/crear']" class="add-product">+</a> <h4>Adding product</h4> </li>
+      <li class="list-group-item" *ngFor="let elemento of lista.product"><div class="img-product"><img class="img-product__img" src="../../assets/products/{{elemento.rootImg}}" alt=""></div><div class="title-product"><h4>{{elemento.title}}</h4> </div><div class="text-container"><p>last modified: <br>{{elemento.modificado}}</p></div><div class="icons-container"><i class="fa-sharp fa-solid fa-pen" [routerLink]="['/actualizar',elemento.id]"></i><i class="fa-solid fa-trash" (click)="eliminarProducto(elemento.id)"></i></div></li>
+  </ul>
+</div>

@@ -1,0 +1,40 @@
+$color-purple: purple;
+$color-white: #ffff;
+$color-dark-purple: #9A0FAB;
+.cardcito   {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 2% !important;
+  margin-left: 13%;
+}
+
+
+
+.carousel-inner{
+  height: 700px;
+  .card-carousel{
+      margin-top: 5%;
+      .tittle{
+          color: $color-dark-purple!important;
+          font-size: 50px;
+          text-align: left;
+
+
+      }
+      .description{
+          color: #7A0089 !important;
+          font-size: 25px;
+          text-align: left;
+          max-width: 26%;
+
+      }
+  }
+
+}
+
+.img-calculate{
+  object-fit: cover;
+  width: 100% ;
+
+}
+

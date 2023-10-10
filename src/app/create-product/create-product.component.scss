@@ -1,0 +1,19 @@
+$color-dark-purple: #9A0FAB;
+$color-background-form:#F8F8F8;
+.container-product{
+    height: auto;
+    width: 60%;
+    margin-left: 20%;
+}
+.btn-product{
+    margin-right: 20%;
+    background-color: $color-dark-purple;
+    border: none;
+}
+.form-visual{
+    border:1px solid $color-dark-purple;
+    padding: 5%;
+    background-color: $color-background-form;
+
+
+}

@@ -1,0 +1,16 @@
+<div class="container-product">
+  <div *ngIf="!noHay">
+  <ul class="list-group list-group-flush" >
+      <li class="list-group-item"><button class="clean-product" (click)="eliminarListaCompleta()">limpiar lista</button></li>
+      <li class="list-group-item" *ngFor="let elemento of listaCompras;index as i"><div class="img-product"><img class="img-product__img" src="../../assets/products/{{elemento.rootImg}}" alt=""></div><div class="title-product"><h4>{{elemento.title}}</h4> </div><div class="icons-container"><p class="icons-container__precio">${{elemento.pricePromotion}}</p><i class="fa-solid fa-trash" (click)="eliminarProductoLista(elemento.id,i)"></i></div></li>
+  </ul>
+  <br>
+  <div class="down-section">
+    <button class="clean-product background-color text-white" (click)="comprarCarrito()">Comprar</button>
+    <p>Total ${{total()}}</p>
+  </div>
+</div>
+<div *ngIf="noHay">
+  <p>no hay productos en el carrito</p>
+</div>
+</div>

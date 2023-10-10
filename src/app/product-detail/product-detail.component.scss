@@ -1,0 +1,86 @@
+$color-purple: purple;
+$color-white: #ffff;
+$color-dark-purple: #9A0FAB;
+
+.productdetail{
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 13.3%;
+  &-view{
+    width: 20%;
+    display: table-cell;
+    display: flex;
+      justify-content: center;
+    &_img{
+      height: 300px;
+      width: 70%;
+      margin-top: 20%;
+      margin-bottom: 20%;
+
+
+    }
+  }
+  &-content{
+    width: 80%;
+    &-header{
+      display: flex;
+      justify-content: space-between ;
+      &_title{
+        margin-left: 5%;
+      }
+      &_quantity{
+        margin-right: 8%;
+      }
+
+    }
+    &-button{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &_shopnow{
+        height: 30px;
+        margin-top: 2%;
+        background-color: $color-dark-purple;
+        border: none;
+      }
+      &_adding{
+        border-radius: 40px;
+        text-align: center;
+        background-color: $color-purple;
+        padding-top: 0;
+        padding-left: 8%;
+        padding-right: 8%;
+        border: none;
+        font-size: 200%;
+      }
+      &_small{
+        margin-top: 10%;
+        margin-left: 7%;
+      }
+    }
+  }
+}
+
+.content-button{
+  width: 15%;
+  margin-right: 8%;
+  display: flex;
+}
+.promocion{
+  text-decoration-line: line-through;
+  text-decoration-color: $color-dark-purple;
+  color: $color-purple;
+}
+.noPromocion{
+  display: none;
+}
+.background-color{
+  border: none;
+}
+
+.background-color:hover{
+  background-color: $color-dark-purple;
+
+}

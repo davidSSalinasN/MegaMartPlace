@@ -1,0 +1,27 @@
+$color-purple: purple;
+$color-white: #ffff;
+$color-dark-purple: #9A0FAB;
+.listproduct{
+  margin-left: 20%;
+  margin-right: 20%;
+
+  &-product{
+
+    height: 200px;
+    border: $color-dark-purple;
+    border-bottom: 1px solid $color-purple;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: $color-dark-purple;
+    &--img{
+      width: 15%;
+      height: 10%;
+    }
+  }
+  &-product:hover{
+    background-color: $color-dark-purple;
+    p{
+      color: $color-white !important;
+    }
+  }
+}

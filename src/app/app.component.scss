@@ -1,0 +1,45 @@
+$color-purple: purple;
+$color-white: #ffff;
+$color-dark-purple: #9A0FAB;
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+
+  .navbarColor {
+    background-color: $color-purple !important;
+    color: $color-white !important;
+
+    a {
+      color: $color-white !important;
+    }
+
+    .container-fluid{
+      .navbar-nav{
+        width: 70%;
+      }
+      .navbar{
+        width: 10%;
+        .icons-nav{
+          width: 15%;
+          height: 15% ;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+    }
+  }
+
+  footer {
+    background-color: $color-purple !important;
+  }
+
+  .fab {
+    padding: 10px !important;
+    color: $color-white;
+    width: 50% !important;
+    margin-left: 45%;
+
+  }
+}

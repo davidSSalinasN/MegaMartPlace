@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="center">
+      <h1>Login</h1>
+      <form id="login-form">
+          <div class="txt_field">
+              <input type="text" id="username" name="username" [(ngModel)]="nombreUsuario" required><br><br>
+              <span></span>
+              <label for="username">Usuario:</label>
+          </div>
+          <div class="txt_field">
+              <input type="password" id="password" name="password" [(ngModel)]="password" required><br><br>
+              <span></span>
+              <label for="password">Contraseña:</label>
+          </div>
+          <button type="submit" (click)="validarUsuario()">Iniciar sesion</button>
+          <p>{{texto}}</p>
+
+      </form>
+  </div>
+</div>
